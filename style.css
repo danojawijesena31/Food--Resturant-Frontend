@@ -325,7 +325,7 @@ header .icon #menu-bars{
     
 } 
 
-.about .row .image img{
+.about .row .image img{ 
     width: 100%;
     height: auto;
 }
@@ -334,12 +334,131 @@ header .icon #menu-bars{
     flex: 1 1 45rem;
 }
 
-.about .row .content h3{
+.about .row .content h3{  
     color: var(--black); 
-    font-size: 1.5rem; 
+    font-size: 4rem; 
     padding: .5rem 0;
+    text-align: center;
 }
 
+.about .row .content p{
+    color: var(--light-color);
+    font-size: 1.5rem; 
+    padding: .5rem 0;
+    line-height: 1.5; 
+    text-align: center;
+}
+
+.about .row .content .icon-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+} 
+
+.about .row .content .icon-container .icons{
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem; 
+    padding: 1,5rem 1rem;
+}
+
+.about .row .content .icon-container .icons i{
+    font-size: 2rem;
+    color: var(--green);
+}
+
+.about .row .content .icon-container .icons span{
+    font-size: 1.5rem;
+    color: var(--black);
+} 
+
+/* Menu section Css */ 
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem; 
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0, .2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.menu .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+} 
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    background: #fff;
+    color: var(--black);
+}
+
+.menu .box-container .box .image .fa-heart:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+.menu .box-container .box .contant{
+    padding: 2rem;
+    padding-top: 0;
+} 
+
+.menu .box-container .box .contant .stars{
+    padding-bottom: 1rem; 
+}
+
+.menu .box-container .box .contant .stars i{
+    color: var(--green);
+    font-size: 1.7rem;
+}
+
+.menu .box-container .box .contant h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.menu .box-container .box .contant p{
+    color: var(--light-color);
+    line-height: 1.2;
+    padding: .5rem 0;
+    font-size: 1.3rem;
+}
+
+.menu .box-container .box .contant  .price{
+    color: var(--green);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
 
 
 /* Media Quary */ 
